@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    double x = 0;
+    double y = 0;
+    string z = "";
+    double xideal = 0;
+        cout << "Your current weight : ";
+        cin >> x;
+
+        cout << "Your current height : ";
+        cin >> y;
+        
+        cout << "Your gender (M/W): ";
+        cin >> z;
+
+    if (z == "M") {
+    xideal = (y - 100) - ((y - 100) * 0.1);
+    } 
+    else {
+    xideal = (y - 100) - ((y - 100) * 0.15);
+    }
+
+    if (x == xideal) {
+    cout << "Your weight is IDEAL" << endl;
+    } 
+    else {
+    cout << "Your weight is not IDEAL, should be " << xideal << endl;
+    }
+    return 0;
+}
